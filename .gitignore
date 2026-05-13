@@ -1,0 +1,56 @@
+# Minimal PHP .gitignore for a WordPress plugin repo
+# Save this file as .gitignore (not .gitignore.txt)
+
+# WordPress core (only if present in this repo)
+/wp-admin/
+/wp-includes/
+/readme.html
+/license.txt
+/xmlrpc.php
+
+# WordPress uploads/cache/upgrade
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/wflogs/
+
+# Plugin/theme folders (track only your plugin)
+/wp-content/plugins/*
+/wp-content/themes/*
+!/wp-content/plugins/jobmasters-ai-resume-builder/
+!/wp-content/plugins/jobmasters-ai-resume-builder/**
+
+# PHP / Composer
+/vendor/
+composer.phar
+/.phpunit/
+phpunit.xml
+phpunit.xml.dist
+phpunit.xml.cache
+.phpunit.result.cache
+
+# Node / build
+/node_modules/
+/dist/
+/build/
+
+# Environment, logs, dumps
+.env
+*.log
+*.sql
+*.sqlite
+*.zip
+*.tar.gz
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Private keys / certs
+*.pem
+*.key
+*.crt
